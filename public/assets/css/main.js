@@ -2165,7 +2165,7 @@ export default StyleSheet.create({
     "iconmajor": {
         "display": "inline-block",
         "paddingRight": 0.5,
-        "fontSize": 3.35,
+        "fontSize": 3,
         "textAlign": "center"
     },
     "iconstyle1": {
@@ -2613,28 +2613,36 @@ export default StyleSheet.create({
         "fontSize": 1.35
     },
     "input[type=\"submit\"]special": {
-        "backgroundColor": "#ffffff",
         "boxShadow": "none !important",
         "fontFamily": "\"Noto Sans KR\", serif",
-        "color": "#000000!important"
+        "color": "#ffffff!important",
+        "borderStyle": "solid",
+        "borderWidth": 0.2,
+        "borderColor": "#ffffff"
     },
     "input[type=\"reset\"]special": {
-        "backgroundColor": "#ffffff",
         "boxShadow": "none !important",
         "fontFamily": "\"Noto Sans KR\", serif",
-        "color": "#000000!important"
+        "color": "#ffffff!important",
+        "borderStyle": "solid",
+        "borderWidth": 0.2,
+        "borderColor": "#ffffff"
     },
     "input[type=\"button\"]special": {
-        "backgroundColor": "#ffffff",
         "boxShadow": "none !important",
         "fontFamily": "\"Noto Sans KR\", serif",
-        "color": "#000000!important"
+        "color": "#ffffff!important",
+        "borderStyle": "solid",
+        "borderWidth": 0.2,
+        "borderColor": "#ffffff"
     },
     "buttonspecial": {
-        "backgroundColor": "#ffffff",
         "boxShadow": "none !important",
         "fontFamily": "\"Noto Sans KR\", serif",
-        "color": "#000000!important"
+        "color": "#ffffff!important",
+        "borderStyle": "solid",
+        "borderWidth": 0.2,
+        "borderColor": "#ffffff"
     },
     "input[type=\"submit\"]special:hover": {
         "backgroundColor": "#cbcbcb !important"
@@ -2789,17 +2797,25 @@ export default StyleSheet.create({
     "features li:nth-last-child(2)": {
         "borderBottomLeftRadius": 3
     },
+    "border": {
+        "backgroundColor": "#f7f7f7",
+        "borderStyle": "solid",
+        "borderTopWidth": 0.01,
+        "borderBottomWidth": 0.01,
+        "borderColor": "#e9e9e9"
+    },
     "spotlight": {
         "MozAlignItems": "center",
         "WebkitAlignItems": "center",
         "MsAlignItems": "center",
         "alignItems": "center",
         "display": "flex",
-        "borderStyle": "solid",
-        "borderBottomWidth": 0.01,
-        "borderColor": "#e9e9e9",
+        "textAlign": "center",
         "paddingLeft": 12,
         "paddingRight": 12
+    },
+    "spotlight p": {
+        "color": "#636363"
     },
     "spotlight image": {
         "MozOrder": 1,
@@ -2853,7 +2869,9 @@ export default StyleSheet.create({
     "wrapperstyle2": {
         "backgroundColor": "#ffffff",
         "fontFamily": "\"Noto Sans KR\", serif",
-        "color": "#000000"
+        "color": "#000000",
+        "paddingTop": 4,
+        "paddingBottom": 4
     },
     "wrapperstyle2 h2": {
         "color": "#000000"
@@ -3222,10 +3240,10 @@ export default StyleSheet.create({
         "WebkitTransition": "-webkit-transform 0.75s ease, opacity 0.75s ease",
         "MsTransition": "-ms-transform 0.75s ease, opacity 0.75s ease",
         "transition": "transform 0.75s ease, opacity 0.75s ease",
-        "MozTransitionDelay": "3.5s",
-        "WebkitTransitionDelay": "3.5s",
-        "MsTransitionDelay": "3.5s",
-        "transitionDelay": "3.5s",
+        "MozTransitionDelay": "1.5s",
+        "WebkitTransitionDelay": "1.5s",
+        "MsTransitionDelay": "1.5s",
+        "transitionDelay": "1.5s",
         "MozTransform": "translateY(0)",
         "WebkitTransform": "translateY(0)",
         "MsTransform": "translateY(0)",
@@ -3237,7 +3255,7 @@ export default StyleSheet.create({
         "height": 8.5,
         "left": "50%",
         "letterSpacing": 0.225,
-        "marginLeft": -8.5,
+        "marginLeft": -8,
         "opacity": 1,
         "outline": 0,
         "paddingLeft": 0.225,
@@ -3269,16 +3287,16 @@ export default StyleSheet.create({
         "WebkitPointerEvents": "none",
         "MsPointerEvents": "none",
         "pointerEvents": "none",
-        "MozTransition": "opacity 3s ease-in-out",
-        "WebkitTransition": "opacity 3s ease-in-out",
-        "MsTransition": "opacity 3s ease-in-out",
-        "transition": "opacity 3s ease-in-out",
-        "MozTransitionDelay": "1.25s",
-        "WebkitTransitionDelay": "1.25s",
-        "MsTransitionDelay": "1.25s",
-        "transitionDelay": "1.25s",
+        "MozTransition": "opacity 1.5s ease-in-out",
+        "WebkitTransition": "opacity 1.5s ease-in-out",
+        "MsTransition": "opacity 1.5s ease-in-out",
+        "transition": "opacity 1.5s ease-in-out",
+        "MozTransitionDelay": "0.1s",
+        "WebkitTransitionDelay": "0.1s",
+        "MsTransitionDelay": "0.1s",
+        "transitionDelay": "0.1s",
         "content": "''",
-        "background": "#fff0c8",
+        "background": "#ffffff",
         "display": "block",
         "width": "100%",
         "height": "100%",
@@ -3349,6 +3367,8 @@ export default StyleSheet.create({
         "color": "#c9c9c9"
     },
     "footer copyright": {
+        "display": "flex",
+        "flexDirection": "column",
         "color": "#464646",
         "fontSize": 0.8,
         "letterSpacing": 0.225,
@@ -3360,11 +3380,13 @@ export default StyleSheet.create({
         "textTransform": "uppercase"
     },
     "footer copyright li": {
-        "borderLeft": "solid 1px #464646",
         "display": "inline-block",
         "lineHeight": 1,
         "marginLeft": 1,
-        "paddingLeft": 1
+        "paddingLeft": 0.22,
+        "paddingTop": 0.22,
+        "paddingRight": 0.22,
+        "paddingBottom": 0.22
     },
     "footer copyright li:first-child": {
         "borderLeft": 0,
