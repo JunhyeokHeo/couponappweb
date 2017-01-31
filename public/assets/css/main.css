@@ -2488,13 +2488,20 @@
 		display: -ms-flex;
 		display: flex;
 		text-align: center;
-		padding-left: 12em;
-		padding-right: 12em;
+		padding-left: 15em;
+		padding-right: 15em;
 
 	}
+	.spotlight h2 {
+		padding-top: 3.5em;
+	}
+	.spotlight strong {
+		color: #ff7532;
+		font-size: 1.15em;
+	}
+
 	.spotlight p {
 		color: #636363;
-
 	}
 		.spotlight .image {
 			-moz-order: 1;
@@ -2622,8 +2629,8 @@
 			background-color: #ffffff;
 			font-family: "Noto Sans KR", serif;
 			color: #000000;
-			padding-top: 4em;
-			padding-bottom: 4em;
+			padding-top: 3.5em;
+			padding-bottom: 0.3em;
 		}
 			.wrapper.style2 h2 {
 				color: #000000;

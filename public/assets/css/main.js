@@ -2811,8 +2811,15 @@ export default StyleSheet.create({
         "alignItems": "center",
         "display": "flex",
         "textAlign": "center",
-        "paddingLeft": 12,
-        "paddingRight": 12
+        "paddingLeft": 15,
+        "paddingRight": 15
+    },
+    "spotlight h2": {
+        "paddingTop": 3.5
+    },
+    "spotlight strong": {
+        "color": "#ff7532",
+        "fontSize": 1.15
     },
     "spotlight p": {
         "color": "#636363"
@@ -2870,8 +2877,8 @@ export default StyleSheet.create({
         "backgroundColor": "#ffffff",
         "fontFamily": "\"Noto Sans KR\", serif",
         "color": "#000000",
-        "paddingTop": 4,
-        "paddingBottom": 4
+        "paddingTop": 3.5,
+        "paddingBottom": 0.3
     },
     "wrapperstyle2 h2": {
         "color": "#000000"
