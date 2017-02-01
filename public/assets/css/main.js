@@ -6,6 +6,16 @@ const {width, height, scale} = Dimensions.get("window"),
     vmax = Math.max(vw, vh);
 
 export default StyleSheet.create({
+    "@CHARSET \"UTF-8\";@font-face": {
+        "fontFamily": "'Noto Sans KR'",
+        "src": "url(../fonts/NotoSansKr.ttf) format('truetype')"
+    },
+    "*": {
+        "fontFamily": "'Noto Sans KR'",
+        "MozBoxSizing": "border-box",
+        "WebkitBoxSizing": "border-box",
+        "boxSizing": "border-box"
+    },
     "html": {
         "marginTop": 0,
         "marginRight": 0,
@@ -1273,11 +1283,6 @@ export default StyleSheet.create({
     },
     "q:after": {
         "content": "none"
-    },
-    "*": {
-        "MozBoxSizing": "border-box",
-        "WebkitBoxSizing": "border-box",
-        "boxSizing": "border-box"
     },
     "*:before": {
         "MozBoxSizing": "border-box",
@@ -2797,6 +2802,21 @@ export default StyleSheet.create({
     "features li:nth-last-child(2)": {
         "borderBottomLeftRadius": 3
     },
+    "spotlight divimage": {
+        "overflow": "hidden"
+    },
+    "spotlight divimage img": {
+        "MozTransition": "-moz-transform 0.2s ease",
+        "WebkitTransition": "-webkit-transform 0.2s ease",
+        "MsTransition": "-ms-transform 0.2s ease",
+        "transition": "transform 0.2s ease"
+    },
+    "spotlight divimage:hover img": {
+        "MozTransform": "scale(1.075)",
+        "WebkitTransform": "scale(1.075)",
+        "MsTransform": "scale(1.075)",
+        "transform": "scale(1.075)"
+    },
     "border": {
         "backgroundColor": "#f7f7f7",
         "borderStyle": "solid",
@@ -3316,11 +3336,7 @@ export default StyleSheet.create({
         "width": "50%"
     },
     "bannerclass image img": {
-        "width": "100%",
-        "marginTop": 1.75,
-        "marginRight": 1.75,
-        "marginBottom": 1.75,
-        "marginLeft": 1.75
+        "width": "100%"
     },
     "bodyis-loading banner logo": {
         "MozTransform": "scale(0.95)",

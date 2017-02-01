@@ -1,6 +1,15 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/earlyaccess/notosanskr.css");
 
+@CHARSET "UTF-8";
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url(../fonts/NotoSansKr.ttf) format('truetype');
+}
+
+* {
+  font-family: 'Noto Sans KR';
+}
 /*
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
@@ -2339,8 +2348,8 @@
 			input[type="button"],
 			button,
 			.button {
-				height: 3.75em;
-				line-height: 3.75em;
+				height: 3em;
+				width: 60%;
 			}
 
 		}
@@ -2468,6 +2477,23 @@
 					}
 
 			}
+      .spotlight div.image {
+    		overflow: hidden;
+    	}
+
+    		.spotlight div.image img {
+    			-moz-transition: -moz-transform 0.2s ease;
+    			-webkit-transition: -webkit-transform 0.2s ease;
+    			-ms-transition: -ms-transform 0.2s ease;
+    			transition: transform 0.2s ease;
+    		}
+
+    		.spotlight div.image:hover img {
+    			-moz-transform: scale(1.075);
+    			-webkit-transform: scale(1.075);
+    			-ms-transform: scale(1.075);
+    			transform: scale(1.075);
+    		}
 
 /* Spotlight */
 	.border {
@@ -2492,6 +2518,7 @@
 		padding-right: 15em;
 
 	}
+
 	.spotlight h2 {
 		padding-top: 3.5em;
 	}
@@ -2594,6 +2621,8 @@
 
 		}
 
+
+
 /* Wrapper */
 
 	.wrapper {
@@ -2636,11 +2665,9 @@
 				color: #000000;
 			}
 
-
 		.wrapper.style4 {
 			background-color: transparent;
 		}
-
 		.wrapper.style5 {
 			background-color: #ffffff;
 			color: #4E4852;
@@ -3164,7 +3191,6 @@
 
 			.bannerclass .image img {
 				width: 100%;
-				margin: 1.75em;
 			}
 		@media screen and (max-width: 1280px) {
 
